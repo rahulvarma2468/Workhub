@@ -155,7 +155,7 @@ export default function HomePage() {
     setBlogStatus({ message: 'Publishing blog post...', type: 'info' });
     
     try {
-      const response = await fetch('http://localhost:5678/webhook-test/blog', {
+      const response = await fetch('http://localhost:5678/webhook-test/061033c4-37fc-493b-8d13-8cc5fad53649', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ title: blogTitle, content: blogContent })
